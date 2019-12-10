@@ -74,6 +74,13 @@ body {
 }
 .custom-select__list-item--active {
     background-color: #F1F1F1;
+} 
+.custom-select__list-item--hover,
+.custom-select__list-item:hover {
+    background-color: #f9f6f6;
+}
+.custom-select__text--bolder {
+    font-weight: bold;
 }
 .custom-select__input {
     width: 100%;
@@ -84,6 +91,7 @@ body {
     border: none;
     border-bottom: 1px solid #999999;
     color: rgba(0, 0, 0, 0.8);
+    &.custom-select__input--focused,
     &:focus {
         outline: none;
         & ~ .custom-select__border {
